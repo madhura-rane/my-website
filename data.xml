@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+
+    <product>
+        <id>1</id>
+        <name>Sunflower Crochet Bag</name>
+        <price>2500</price>
+        <image>images/sunflower crochet bag.jpeg</image>
+    </product>
+
+    <product>
+        <id>2</id>
+        <name>white flower  crochet bag</name>
+        <price>2420</price>
+        <image>images/white flower  crochet bag.jpeg</image>
+    </product>
+
+    <product>
+        <id>3</id>
+        <name>crochet browen bag</name>
+        <price>2000</price>
+        <image>images/crochet browen bag.jpeg</image>
+    </product>
+
+    <product>
+        <id>4</id>
+        <name>Crochet Colorful Bag</name>
+        <price>1700</price>
+        <image>images/crochet colorful bag.jpeg</image>
+    </product>
+
+    <product>
+        <id>5</id>
+        <name>Crochet Cream Bag</name>
+        <price>2600</price>
+        <image>images/crochet creamy bag.jpeg</image>
+    </product>
+
+    <product>
+        <id>6</id>
+        <name>white and black </name>
+        <price>2600</price>
+        <image>images/white and black .jpeg</image>
+    </product>
+
+    <product>
+        <id>7</id>
+        <name>Colorful Bouquet</name>
+        <price>2500</price>
+        <image>images/colorful bouquet.jpeg</image>
+    </product>
+
+    <product>
+        <id>8</id>
+        <name>Sunflower Bouquet</name>
+        <price>2500</price>
+        <image>images/sunflower bouquet.jpeg</image>
+    </product>
+
+    <product>
+        <id>9</id>
+        <name>purplr bouqute</name>
+        <price>2700</price>
+        <image>images/purplr bouqute.jpeg</image>
+    </product>
+
+    <product>
+        <id>10</id>
+        <name>white and blue second bouqute</name>
+        <price>2700</price>
+        <image>images/white and blue second bouqute.jpeg</image>
+    </product>
+
+    <product>
+        <id>11</id>
+        <name>Three Color Bouquet</name>
+        <price>2400</price>
+        <image>images/three color bouquet.jpeg</image>
+    </product>
+
+    <product>
+        <id>12</id>
+        <name>White and Blue Bouquet</name>
+        <price>150</price>
+        <image>images/white and blue bouquet.jpeg</image>
+    </product>
+
+    <product>
+        <id>13</id>
+        <name>Cherry Keychain</name>
+        <price>150</price>
+        <image>images/cherry keychain.jpeg</image>
+    </product>
+
+    <product>
+        <id>14</id>
+        <name>Evil Eye Keychain</name>
+        <price>150</price>
+        <image>images/evil eye keychain.jpeg</image>
+    </product>
+
+    <product>
+        <id>15</id>
+        <name>four sunflowe keychain</name>
+        <price>150</price>
+        <image>images/four sunflowe keychain.jpeg</image>
+    </product>
+
+    <product>
+        <id>16</id>
+        <name>Pink Tulip Keychain</name>
+        <price>150</price>
+        <image>images/pink tulip keychain.jpeg</image>
+    </product>
+
+    <product>
+        <id>17</id>
+        <name>Sunflower Keychain</name>
+        <price>150</price>
+        <image>images/sun flower keychain.jpeg</image>
+    </product>
+
+    <product>
+        <id>18</id>
+        <name>White and Yellow Keychain</name>
+        <price>150</price>
+        <image>images/white and yellow keychain.jpeg</image>
+    </product>
+
+    <product>
+        <id>19</id>
+        <name>tulip purple keychain</name>
+        <price>150</price>
+        <image>images/tulip purple keychain.jpeg</image>
+    </product>
+
+</products>

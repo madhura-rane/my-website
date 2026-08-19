@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login - LoopWhimsy</title>
+
+
+    <!-- Bootstrap CSS -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- Custom CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+
+    <style>
+
+        /* =========================
+           LOGIN CARD
+           ========================= */
+
+        .login-card {
+
+            border-radius: 15px;
+
+        }
+
+
+        /* =========================
+           LOGIN BUTTON
+           ========================= */
+
+        .login-button {
+
+            border-radius: 10px;
+
+            padding: 11px;
+
+            font-size: 16px;
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+     ===================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+
+    <div class="container">
+
+
+        <!-- LOGO -->
+
+        <a
+            class="navbar-brand d-flex align-items-center"
+            href="index.html">
+
+            <img
+                src="images/logo.jpeg"
+                alt="LoopWhimsy Logo"
+                width="50"
+                height="50"
+                class="me-2">
+
+
+            <span class="fw-bold text-danger">
+
+                LoopWhimsy
+
+            </span>
+
+        </a>
+
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+
+        <!-- MENU -->
+
+        <div
+            class="collapse navbar-collapse"
+            id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+
+                <!-- HOME -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- PRODUCTS -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="products.html">
+
+                        Products
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- ABOUT -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="about.html">
+
+                        About
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- CONTACT -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="contact.html">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- ADMIN LOGIN -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link active"
+                        href="admin-login.html">
+
+                        Admin Login 🔐
+
+                    </a>
+
+                </li>
+
+
+
+                <!-- CART -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="cart.html">
+
+                        Cart 🛒
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     ADMIN LOGIN
+     ===================================================== -->
+
+<section class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-sm-10 col-md-6 col-lg-5">
+
+
+            <div class="card shadow border-0 p-4 login-card">
+
+
+                <!-- LOGIN HEADING -->
+
+                <div class="text-center mb-4">
+
+
+                    <div
+                        style="font-size: 50px;">
+
+                        🔐
+
+                    </div>
+
+
+                    <h2 class="text-danger">
+
+                        Admin Login
+
+                    </h2>
+
+
+                    <p class="text-muted">
+
+                        Login to manage LoopWhimsy orders
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     LOGIN FORM
+                     ================================================= -->
+
+                <form
+                    id="adminLoginForm"
+                    autocomplete="off">
+
+
+                    <!-- USERNAME -->
+
+                    <div class="mb-3">
+
+                        <label
+                            for="adminUsername"
+                            class="form-label fw-bold">
+
+                            Username
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="adminUsername"
+                            name="adminUsername"
+                            class="form-control"
+                            placeholder="Enter username"
+                            autocomplete="off"
+                            autocapitalize="none"
+                            spellcheck="false"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="mb-3">
+
+                        <label
+                            for="adminPassword"
+                            class="form-label fw-bold">
+
+                            Password
+
+                        </label>
+
+
+                        <input
+                            type="password"
+                            id="adminPassword"
+                            name="adminPassword"
+                            class="form-control"
+                            placeholder="Enter password"
+                            autocomplete="new-password"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- ERROR MESSAGE -->
+
+                    <div
+                        id="loginError"
+                        class="text-danger text-center mb-3">
+
+                    </div>
+
+
+
+                    <!-- LOGIN BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="btn btn-danger w-100 login-button">
+
+                        Login 🔐
+
+                    </button>
+
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer
+    class="bg-dark text-white text-center py-4 mt-5">
+
+    <h5>
+
+        Follow LoopWhimsy 💕
+
+    </h5>
+
+
+    <p>
+
+        Handmade with Love |
+        Crochet & Pipe Cleaner Creations
+
+    </p>
+
+
+    <a
+        href="https://www.instagram.com/loopwhimsy/"
+        target="_blank"
+        class="me-3 text-danger">
+
+        <i class="bi bi-instagram fs-2"></i>
+
+    </a>
+
+
+    <a
+        href="https://wa.me/917448053833"
+        target="_blank"
+        class="text-success">
+
+        <i class="bi bi-whatsapp fs-2"></i>
+
+    </a>
+
+</footer>
+
+
+
+<!-- =====================================================
+     LOGIN JAVASCRIPT
+     ===================================================== -->
+
+<script>
+
+"use strict";
+
+
+/* =====================================================
+   GET ELEMENTS
+   ===================================================== */
+
+const adminLoginForm =
+    document.getElementById("adminLoginForm");
+
+
+const adminUsername =
+    document.getElementById("adminUsername");
+
+
+const adminPassword =
+    document.getElementById("adminPassword");
+
+
+const loginError =
+    document.getElementById("loginError");
+
+
+
+/* =====================================================
+   CLEAR LOGIN FIELDS
+   ===================================================== */
+
+/*
+   This makes sure username and password
+   are empty whenever the login page opens.
+*/
+
+function clearLoginFields() {
+
+    adminUsername.value = "";
+
+    adminPassword.value = "";
+
+    loginError.textContent = "";
+
+}
+
+
+/* Run when page opens */
+
+clearLoginFields();
+
+
+/* Run when page is restored from browser cache */
+
+window.addEventListener(
+    "pageshow",
+    function() {
+
+        clearLoginFields();
+
+    }
+);
+
+
+
+/* =====================================================
+   LOGIN
+   ===================================================== */
+
+adminLoginForm.addEventListener(
+    "submit",
+    function(event) {
+
+        event.preventDefault();
+
+
+        const username =
+            adminUsername.value.trim();
+
+
+        const password =
+            adminPassword.value;
+
+
+
+        /* =============================================
+           ADMIN LOGIN DETAILS
+
+           Username: admin
+           Password: admin123
+           ============================================= */
+
+
+        if (
+            username === "admin" &&
+            password === "admin123"
+        ) {
+
+
+            /* Save login status */
+
+            localStorage.setItem(
+                "adminLoggedIn",
+                "true"
+            );
+
+
+            /* Open admin dashboard */
+
+            window.location.href =
+                "admin.html";
+
+
+        }
+        else {
+
+
+            /* Wrong login */
+
+            loginError.textContent =
+                "Invalid username or password ❌";
+
+
+            /* Clear password */
+
+            adminPassword.value = "";
+
+
+            /* Keep username for correction */
+
+            adminPassword.focus();
+
+        }
+
+    }
+);
+
+</script>
+
+
+
+<!-- =====================================================
+     BOOTSTRAP JS
+     ===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>
